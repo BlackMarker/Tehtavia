@@ -10,6 +10,8 @@ namespace Lotto
 	{
 		static void Main(string[] args)
 		{
+			Console.WriteLine("Lottorivit: ");
+
 		}
 	}
 }
