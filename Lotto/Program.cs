@@ -12,6 +12,7 @@ namespace Lotto
 		{
 			Console.WriteLine("Lottorivit: ");
 			//joku kommentti
+			//toka kommentti
 
 		}
 	}
