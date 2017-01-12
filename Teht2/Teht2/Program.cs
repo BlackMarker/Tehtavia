@@ -23,7 +23,7 @@ namespace Teht2{
 					Console.Write(tulos + "\n");
 				}
 				else {
-					Console.WriteLine("12\n");
+					Console.WriteLine("5\n");
 				}
 			}
 			
