@@ -1,4 +1,5 @@
-﻿/*Tee kahden sisäkkäisen for-silmukan avulla ohjelma, joka tulostaa seuraavanlaisen kuvion:
+﻿/*TÄMÄ ON OIKEASTI TEHTAVA 11
+ * Tee kahden sisäkkäisen for-silmukan avulla ohjelma, joka tulostaa seuraavanlaisen kuvion:
 *
 **
 ***
