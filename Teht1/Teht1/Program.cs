@@ -13,17 +13,18 @@ namespace Teht1
 	class Program{
 		static void Main(string[] args){
 			//Alustetaan muuttuja
+			int syote;
+			string[] taulu = { "annoit jonkun muun luvun", "yksi", "kaksi", "kolme" };
 			while (true) {
-				int syote;
+				
 				Console.WriteLine("Anna numero (1, 2 ,3)");
 				//Tallennetaan muuttujaan käyttäjän syöte
-				syote = Console.Read();
-				string teksti = Convert.ToString(syote);
-				if (teksti == "1" || teksti == "2" || teksti == "3") {
-					Console.WriteLine("Annoit luvun: " + syote);
+				syote = int.Parse(Console.ReadLine());
+				if (syote == 1 || syote == 2 || syote == 3) {
+					Console.WriteLine(taulu[syote]);
 				}
 				else {
-					Console.WriteLine("Antamasi luku ei kelpaa");
+					Console.WriteLine(taulu[0]);
 				}
 			}
 
