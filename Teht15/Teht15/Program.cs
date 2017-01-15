@@ -18,7 +18,10 @@ namespace Teht15 {
 			Console.WriteLine("Kuinka korkea puu: ");
 			int korkeus = int.Parse(Console.ReadLine());
 			korkeus--;
+			korkeus--;
 			int leveys = korkeus;
+			int oikeaL = leveys;
+
 			int teko = 0;
 			//Muuttuja tähtien määrän kasvamisella
 			int maara = 1;
@@ -37,24 +40,6 @@ namespace Teht15 {
 				Console.WriteLine("\n");
 			}
 			*/
-			//spacet
-			if (teko == 0) {
-				for (int i = leveys; i > -1; i--) {
-					Console.Write(" ");
-				}
-				teko = 1;
-			}
-			//tähdet
-			if (teko == 1) {
-				for (int i = maara; i > 0; i--) {
-					Console.Write("*");
-				}
-				teko = 2;
-			}
-			if (teko == 2) {
-				Console.WriteLine();
-				teko = 0;
-			}
 				while (true) {
 				//spacet
 				if (teko == 0) {
@@ -65,9 +50,10 @@ namespace Teht15 {
 				}
 				//tähdet
 				if (teko == 1) {
-					for (int i = maara; i > 0; i--) {
-						Console.Write("**");
+					for (int i = maara ; i > 0; i--) {
+						Console.Write("*");
 					}
+					maara++;
 					maara++;
 					leveys--;
 					teko = 2;
@@ -76,7 +62,16 @@ namespace Teht15 {
 					Console.WriteLine();
 					teko = 0;
 				}
-				if (maara == korkeus) {
+				if (leveys == 0) {
+					teko = 6;
+					//Juurelle spacet
+					for (int i = 0; i < 2; i++) {
+							
+						for (int c = oikeaL; c > 0; c--) {
+							Console.Write(" ");
+						}
+						Console.WriteLine("*");
+					}
 					break;
 				}
 			}
